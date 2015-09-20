@@ -1,0 +1,60 @@
+<div class="row-fluid">
+    <div class="span12">
+        <div class="titleBox">
+            <h1 class="huge">Registro de Usuario</h1>
+        </div>
+    </div>
+</div>
+<!-- / row-fluid -->
+
+
+<div class="row-fluid">
+    <div class="span12">
+        <div class="lineBox right">
+            <div class="inner">
+                <a href="/index" class="btn metaIcon" data-toggle="tooltip" title="Home"><span class="entypo home"><i></i>Home</span></a>
+                <a href="#" class="btn btn-icon left btn-primary"><span class="entypo vcard"><i></i></span>Registro de Usuario</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- / row-fluid -->
+
+<I>
+<%= form_for(@usuario) do |f| %>
+<div class="row-fluid">
+    <div class="span4">
+            <%= f.label :Nombre %> 
+            <%= f.text_field :nombre_usuario %>
+            <%= f.label :Nombre_Acceso %> 
+            <%= f.text_field :nombre_acceso %>
+            <%= f.label :Direccion %> 
+            <%= f.text_field :direccion %>
+
+    </div> 
+    <div class="span4">
+            <%= f.label :Apellido_Paterno %> 
+            <%= f.text_field :apellido_paterno %>
+            <%= f.label :Contraseña %> 
+            <%= f.password_field :password %>
+            <%= f.label :Fecha_Nacimiento %> 
+            <%= f.text_field :fechanacimiento %>
+    </div> 
+    <div class="span4">
+            <%= f.label :Apellido_Materno %> 
+            <%= f.text_field :apellido_materno %>
+            <%= f.label :Correo %> 
+            <%= f.text_field :correo %>
+            <%= f.label :Sexo %> 
+            <%= radio_button_tag 'sexo', 'M', true %> Femenino<br>
+            <%= radio_button_tag 'sexo', 'H' %> Masculino<br>
+            <%= radio_button_tag 'sexo', 'O' %> Otro<br>
+    </div> 
+</div>
+<div class="row-fluid">
+    <div class="span8">
+        <%= f.submit 'Crear Cuenta' %>
+    </div>
+</div>
+<% end %>
+</I>

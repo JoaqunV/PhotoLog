@@ -24,78 +24,49 @@
 
 		            <div class="nav-collapse">
 		                <ul class="nav pull-left">
-		                    <li class="active dropdown">
-		                        <a href="index.html" class="dropdown-toggle">Home</a>
-		                        <ul class="dropdown-menu">
-		                            <li><a href="index.html">Home Slider 1</a></li>
-		                            <li><a href="invia-home-II.html">Home Slider 2</a></li>
-		                            <li><a href="invia-home-boxed.html">Home Boxed</a></li>
-		                            <li><a href="invia-horizontal-menu.html">Horizontal Submenu</a></li>
-		                        </ul>
+		                    <li>
+		                        <a href="index.html">Inicio</a>
+		                    </li> 
+		                    <% if %>
+		                       
+		                    <% else %>
+		                    <li>
+		                    	<a href="invia-aboutus.html" >Perfil</a>
+	                    	 </li>
+		                    <% end %>
+		                    <% if %>
+		                       
+		                    <% else %>
+		                    <li>
+		                    	<a href="invia-site-elements.html">Amigos</a>
+	                    	</li>
+		                    <% end %>
+		             
+		                    <li>
+		                        <a href="invia-portfolio.html">Work</a>
 		                    </li>
-		                    <li class="dropdown">
-		                        <a href="invia-aboutus.html" class="dropdown-toggle">Pages</a>
-		                        <ul class="dropdown-menu">
-		                            <li><a href="invia-aboutus.html">About</a></li>
-		                            <li><a href="invia-aboutus2.html">About II</a></li>
-		                            <li><a href="invia-elements-404.html">404</a></li>
-		                        </ul>
-		                    </li>
-		                    <li class="dropdown">
-		                        <a href="invia-site-elements.html" class="dropdown-toggle">Features</a>
-
-		                        <ul class="dropdown-menu unstyled">
-		                            <li><a href="invia-site-elements.html">Elements</a></li>
-		                            <li><a href="invia-pricing-tables.html">Pricing Tables</a></li>
-		                            <li class="dropdown-submenu"><a href="#">Submenu</a>
-		                                <ul class="dropdown-menu unstyled">
-		                                    <li class="dropdown-submenu"><a href="#">This is an Example</a>
-		                                        <ul class="dropdown-menu unstyled">
-		                                            <li><a href="#">Page1</a></li>
-		                                            <li><a href="#">Page2</a></li>
-		                                        </ul>
-		                                    </li>
-		                                    <li><a href="#">On Third Level</a></li>
-		                                    <li><a href="#">Navigation Item</a></li>
-		                                </ul>
-		                            </li>
-		                        </ul>
+		                    <li >
+		                        <a href="invia-blog.html">Blog</a>
 		                    </li>
 		                    <li>
-		                    <li class="dropdown">
-		                        <a href="invia-portfolio.html" class="dropdown-toggle">Work</a>
-		                        <ul class="dropdown-menu">
-		                            <li><a href="invia-portfolio-2columns.html">2 Columns</a></li>
-		                            <li><a href="invia-portfolio.html">3 Columns</a></li>
-		                            <li><a href="invia-portfolio-4columns.html">4 Columns</a></li>
-		                            <li><a href="invia-portfolio-details.html">Portfolio Details</a></li>
-		                        </ul>
-		                    </li>
-		                    <li class="dropdown">
-		                        <a href="invia-blog.html" class="dropdown-toggle">Blog</a>
-		                        <ul class="dropdown-menu">
-		                            <li><a href="invia-blog.html">Blog List</a></li>
-		                            <li><a href="invia-blogpost.html">Single Blog</a></li>
-		                        </ul>
-		                    </li>
-		                    <li class="dropdown">
-		                        <a href="invia-home-blue.html" class="dropdown-toggle">Colors</a>
-		                        <ul class="dropdown-menu">
-		                            <li><a href="invia-home-blue.html">Blue</a></li>
-		                            <li><a href="invia-home-green.html">Green</a></li>
-		                            <li><a href="invia-home-red.html">Red</a></li>
-		                            <li><a href="invia-home-bw.html">B &amp; W</a></li>
-		                            <li><a href="invia-home-yellow.html">Yellow</a></li>
-		                        </ul>
-		                    </li>
-		                    <li>
-		                        <a href="invia-contact.html">Contact</a>
+		                    	<% if %>
+		                        	<%= link_to "Registrarse", user_new_path %>
+		                        <% else %>
+		                        	<a href="invia-home-blue.html">Configuración</a>
+		                        <% end %>	
+	                        </li>
+	                    	<li>
+		                    	<% if %>
+		                        	<a href="invia-contact.html">Ingresar</a>
+		                        <% else %>
+		                        	<a href="invia-contact.html">Salir</a>
+		                        <% end %>	
 		                    </li>
 		                </ul>
 		            </div>
 		            <!-- / nav-collapse -->
 		            <ul class="menuIcon pull-right">
-		                <li class="search"><a href="#">search</a></li>
+		                <li class="search"><a href="#">Buscar Usuario</a></li>
 		            </ul>
 		        </div>
 		    </div>

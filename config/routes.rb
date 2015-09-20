@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get 'administrador/fotografias' => 'administrador#gestion'
   get 'administrador/bloquear'
   get 'administrador/desbloquear'
+  get 'user/new'
   get 'index' => 'photography#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
