@@ -1,0 +1,203 @@
+/* standard components */
+
+a:hover, a:focus {
+  color:#fbdf00;
+}
+
+.flickr_badge > div a:hover{ border: 1px solid #fbdf00; }
+
+.navbar-static-top .navbar-inner{
+	background: #fbdf00;
+}
+
+.dropdown-menu li > a:hover,
+.dropdown-menu li > a:focus,
+.dropdown-submenu:hover > a{
+	color: #1a171b;
+}
+
+.dropdown-menu .active > a,
+.dropdown-menu .active > a:hover{
+	color: #1a171b;
+}
+
+.dropdown-submenu:hover > a:after{
+	border-left-color: #fbdf00;
+}
+
+.highlightBox{
+	border-left: 6px solid #fbdf00;
+}
+
+.recentPostBox .medium a{
+	color: #fbdf00 !important;
+}
+.blockTwitter{
+	background: #fbdf00;
+}
+
+.blockTwitter:after{
+	color: #fbdf00;
+}
+
+.contactBox a{
+	color: #fbdf00;
+}
+
+.contactMap .gmap-marker i:before{
+	color: #fbdf00;
+}
+.contactInfoBox{
+	background: #fbdf00;
+}
+.btn-primary{
+	background: #fbdf00;
+}
+
+.btn-primary:hover{
+	background: #fbdf00;
+}
+
+.btn-link:hover{
+	color: #fbdf00;
+}
+.tab-content.version2{
+	background: #fbdf00;
+}
+
+.nav-tabs.version2 > li > a:hover{
+	background-color: #fbdf00;
+}
+
+.nav-tabs.version2 > .active > a,
+.nav-tabs.version2 > .active > a:hover{
+	background-color: #fbdf00;
+}
+
+.pretty-table table th{
+	background: #fbdf00;
+}
+
+.priceBox .pricePlan{
+	color: #fbdf00;
+}
+
+.priceBox .emphasis{
+	color: #fbdf00;
+}
+
+.priceBox.spec .pricePlan{
+	background: #fbdf00;
+}
+
+.priceBox.version2 .pricePlan{
+	background: #fbdf00;
+}
+
+.priceBox.version2.spec{
+	background: #fbdf00;
+}
+
+.priceBox.version2.spec .emphasis-2 btn{
+	color: #fbdf00;
+}
+
+.progress .bar{
+	background: #fbdf00;
+}
+
+ul.filterPortfolio li.active .btn,
+ul.filterPortfolio li .btn:hover{
+	background: #fbdf00;
+}
+
+blockquote .fontello i:before{
+	color: #fbdf00;
+}
+
+.sectionFaq .accordion .accordion-inner p:before{
+	color: #fbdf00;
+}
+
+.faqMenu .active a{
+	border-left-color: #fbdf00;
+	color: #fbdf00;
+}
+
+.metaData a{
+	color: #fbdf00;
+}
+
+.promoBox{
+	background: #fbdf00;
+}
+
+ul.commentList .oneComment .metaIcon{
+	background: #fbdf00;
+}
+
+#toTop:hover{
+	background: #fbdf00;
+}
+
+.box-mainslider .box-click {
+	background: #fbdf00;
+}
+
+/* / standard components */
+
+/* other elements */
+
+body,
+body.boxed #boxedWrapper,
+.lineBox .inner,
+.accordion-heading .accordion-toggle .entypo.metaIcon i:before,
+.sectionFaq	.accordion-heading .accordion-toggle .entypo.metaIcon i:before
+{
+	background: #f2f2f2;
+}
+
+.btn-primary,
+.btn-primary:hover {
+	color:#1a171b;
+}
+
+ul.menuIcon a:before {
+	color:#1a171b;
+}
+
+.dropdown-menu {
+	background: #fbdf00;
+}
+
+.dropdown-menu li > a {
+	color:#1a171b;
+}
+
+
+.navbar .brand {
+	color:#1a171b;
+}
+
+.navbar .nav > li > a,
+.navbar .nav > li > a:hover,
+.navbar .nav > li:hover > a {
+	color:#1a171b;
+}
+
+.dropdown-menu li > a:hover,
+.dropdown-menu li > a:focus,
+.dropdown-submenu:hover > a {
+	color:#1a171b;
+}
+
+.navbar .nav li.dropdown.open > .dropdown-toggle, .navbar .nav li.dropdown.active > .dropdown-toggle, .navbar .nav li.dropdown.open.active > .dropdown-toggle {
+	color:#1a171b;
+}
+
+@media (max-width: 979px) {
+	.nav-collapse .nav > li > a, .nav-collapse .dropdown-menu a {
+		color:#1a171b;
+	}
+
+}

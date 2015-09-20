@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Estimado, <%= @user.nombre_usuario %></h1>
+    <p>
+      Analizando sus recientes acciones realizadas en la plataforma su usuario 
+      <%= @user.nombre_acceso%> ha sido bloqueado temporalmente.<br/>
+    </p>
+    <p>En caso de que crea que se ha cometido un error, favor notificar a administracion@photolog.nz</p>
+    <p>
+      Recuerde visitarnos en: <a href="<%= @url %>">Photolog</a>
+    </p>
+  </body>
+</html>

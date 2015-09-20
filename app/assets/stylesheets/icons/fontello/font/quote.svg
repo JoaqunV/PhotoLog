@@ -1,0 +1,39 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>
+Created by FontForge 20100429 at Mon Mar  4 16:18:33 2013
+ By root
+Copyright (C) 2012 by original authors @ fontello.com
+</metadata>
+<defs>
+<font id="quote" horiz-adv-x="1000" >
+  <font-face 
+    font-family="quote"
+    font-weight="500"
+    font-stretch="normal"
+    units-per-em="1000"
+    panose-1="2 0 6 9 0 0 0 0 0 0"
+    ascent="850"
+    descent="-150"
+    bbox="0 -150 1000 850"
+    underline-thickness="50"
+    underline-position="-100"
+    unicode-range="U+E053-E054"
+  />
+<missing-glyph 
+d="M33 0v666h265v-666h-265zM66 33h199v600h-199v-600z" />
+    <glyph glyph-name=".notdef" 
+d="M33 0v666h265v-666h-265zM66 33h199v600h-199v-600z" />
+    <glyph glyph-name=".null" horiz-adv-x="0" 
+ />
+    <glyph glyph-name="nonmarkingreturn" 
+ />
+    <glyph glyph-name="uniE053" unicode="&#xe053;" 
+d="M146 704q146 146 354 146t354 -146t146 -354t-146 -354t-354 -146t-354 146t-146 354t146 354zM441 151v261h-74q-4 48 27 70q29 20 88 34l-21 100q-137 -13 -187 -61q-55 -52 -55 -158v-246h222zM518 151h222v261h-74q-4 49 26 70q29 20 89 34l-21 100
+q-137 -13 -187 -61q-55 -52 -55 -158v-246z" />
+    <glyph glyph-name="uniE054" unicode="&#xe054;" 
+d="M0 375q0 206 114 293q39 30 71 45.5t84 27.5q49 12 163 21l37 -176q-95 -19 -147 -51q-66 -40 -58 -130h131v-467h-395v437zM529 -62v437q0 135 54 226q19 33 56.5 64t76.5 48q28 13 78.5 26t85.5 16q10 1 37.5 3t43.5 4l39 -176q-55 -11 -84.5 -20.5t-63.5 -30.5
+q-63 -39 -59 -130h131v-467h-395z" />
+  </font>
+</defs></svg>

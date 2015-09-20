@@ -1,0 +1,282 @@
+/* standard components */
+
+a:hover, a:focus {
+  color:#000;
+}
+
+.flickr_badge > div a:hover{ border: 1px solid #fff; }
+
+.navbar-static-top .navbar-inner{
+	background: #fff;
+}
+
+.dropdown-menu li > a:hover,
+.dropdown-menu li > a:focus,
+.dropdown-submenu:hover > a{
+	color: #fff;
+}
+
+.dropdown-menu .active > a,
+.dropdown-menu .active > a:hover{
+	color: #fff;
+}
+
+.dropdown-submenu:hover > a:after{
+	border-left-color: #fff;
+}
+
+.highlightBox{
+	border-left: 6px solid #fff;
+}
+
+.recentPostBox .medium a{
+	color: #fff !important;
+}
+.blockTwitter{
+	background: #fff;
+}
+
+.blockTwitter:after{
+	color: #fff;
+}
+
+.contactBox a{
+	color: #fff;
+}
+
+.contactMap .gmap-marker i:before{
+	color: #fff;
+}
+.contactInfoBox{
+	background: #fff;
+}
+.btn-primary{
+	background: #fff;
+	color:#1a171b;
+}
+
+.btn-primary:hover{
+	background: #fff;
+	color:#1a171b;
+}
+
+.btn-link:hover{
+	color: #fff;
+}
+.tab-content.version2{
+	background: #fff;
+}
+
+.nav-tabs.version2 > li > a:hover{
+	background-color: #fff;
+}
+
+.nav-tabs.version2 > .active > a,
+.nav-tabs.version2 > .active > a:hover{
+	background-color: #fff;
+}
+
+.pretty-table table th{
+	background: #fff;
+}
+
+.priceBox .pricePlan{
+	color: #fff;
+}
+
+.priceBox .emphasis{
+	color: #fff;
+}
+
+.priceBox.spec .pricePlan{
+	background: #fff;
+}
+
+.priceBox.version2 .pricePlan{
+	background: #fff;
+}
+
+.priceBox.version2.spec{
+	background: #fff;
+}
+
+.priceBox.version2.spec .emphasis-2 btn{
+	color: #fff;
+}
+
+.progress .bar{
+	background: #fff;
+}
+
+ul.filterPortfolio li.active .btn,
+ul.filterPortfolio li .btn:hover{
+	background: #fff;
+}
+
+blockquote .fontello i:before{
+	color: #fff;
+}
+
+.sectionFaq .accordion .accordion-inner p:before{
+	color: #fff;
+}
+
+.faqMenu .active a{
+	border-left-color: #fff;
+	color: #fff;
+}
+
+.metaData a{
+	color: #fff;
+}
+
+.promoBox{
+	background: #fff;
+}
+
+ul.commentList .oneComment .metaIcon{
+	background: #fff;
+}
+
+#toTop:hover{
+	background: #000;
+}
+.box-mainslider .box-click {
+	background: #000;
+}
+
+/* / standard components */
+
+/* other elements */
+
+body,
+body.boxed #boxedWrapper,
+.lineBox .inner,
+.accordion-heading .accordion-toggle .entypo.metaIcon i:before,
+.sectionFaq	.accordion-heading .accordion-toggle .entypo.metaIcon i:before
+{
+	background: #e6e6e6;
+}
+
+.dropdown-menu {
+	background: #fff;
+	-webkit-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.11), -1px 2px 3px rgba(0, 0, 0, 0.11);
+	-moz-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.11), -1px 2px 3px rgba(0, 0, 0, 0.11);
+	box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.11), -1px 2px 3px rgba(0, 0, 0, 0.11);
+}
+
+.dropdown-menu li > a {
+	color:#333;
+}
+
+#footer {
+	background: #fafafa;
+	color:#000;
+}
+#footer .footNotes {
+	background: #1a171b;
+}
+
+#footer .footNotes p, #footer .footNotes a  {
+	color:#8d8b8d;
+}
+/* bw styles */
+.btn{
+	background: #fff;
+	color:#1a171b;
+}
+
+.btn:hover{
+	background: #fff;
+	color:#1a171b;
+}
+.navbar .brand {
+	color:#1a171b;
+}
+
+.navbar .nav > li > a,
+.navbar .nav > li > a:hover,
+.navbar .nav > li:hover > a {
+	color:#1a171b;
+}
+
+.dropdown-menu li > a:hover,
+.dropdown-menu li > a:focus,
+.dropdown-submenu:hover > a {
+	color:#1a171b;
+}
+.lineBox:before {
+	border-top-color:#cfcfcf;
+}
+
+#footer a,
+#footer a:hover,
+ul.socialIcons i:before {
+	color:#000;
+}
+
+.flexslider.fadeFlex .flex-direction-nav .flex-next:after, .flexslider.flexCarousel .flex-direction-nav .flex-next:after,
+.flexslider.fadeFlex .flex-direction-nav .flex-prev:after, .flexslider.flexCarousel .flex-direction-nav .flex-prev:after{
+	color:#000;
+}
+.flexslider.fadeFlex .flex-direction-nav .flex-disabled.flex-prev:after,
+.flexslider.flexCarousel .flex-direction-nav .flex-disabled.flex-prev:after,
+.flexslider.fadeFlex .flex-direction-nav .flex-disabled.flex-next:after,
+.flexslider.flexCarousel .flex-direction-nav .flex-disabled.flex-next:after {
+	color:rgba(0,0,0,.5);
+}
+#footer h1, #footer h2, #footer h3, #footer h4, #footer h5, #footer h6 {
+	color:#000;
+}
+.buttonBox  {
+	background: #000;
+}
+.buttonBox p {
+	color:#fff;
+}
+ul.menuIcon a:before {
+	color:#000;
+}
+.navbar .nav li.dropdown.open > .dropdown-toggle, .navbar .nav li.dropdown.active > .dropdown-toggle, .navbar .nav li.dropdown.open.active > .dropdown-toggle {
+	color:#000;
+}
+
+.bgnavmainslider {
+background: #fff;
+}
+
+.flexslider.navmainslider .slides > li.flex-active-slide
+{
+color: #1a171b;
+background:#f4f4f4;
+}
+
+.flexslider.navmainslider .slides > li {
+color: #1a171b;
+}
+.flexslider.mainslider .flex-control-paging li a.flex-active,
+.flexslider.mainslider .flex-control-paging li a:hover {
+background: #ccc;
+}
+.flexslider.mainslider .flex-direction-nav .flex-prev:after,
+.flexslider.mainslider .flex-direction-nav .flex-next:after {
+	color:#000;
+}
+.flexslider.mainslider .flex-direction-nav .flex-prev.flex-disabled:after,
+.flexslider.mainslider .flex-direction-nav .flex-next.flex-disabled:after {
+	color:#ccc;
+}
+.btn.btn-icon.btn-primary,
+.contactInfoBox,
+.contactInfoBox p,
+.contactInfoBox a
+{
+	color: #1a171b;
+}
+
+@media (max-width: 979px) {
+	.nav-collapse .nav > li > a, .nav-collapse .dropdown-menu a {
+		color:#000;
+	}
+
+}

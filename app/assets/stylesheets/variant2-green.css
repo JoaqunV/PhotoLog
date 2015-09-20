@@ -1,0 +1,195 @@
+/* standard components */
+
+a:hover, a:focus {
+  color:#00afa9;
+}
+
+.flickr_badge > div a:hover{ border: 1px solid #00afa9; }
+
+.navbar-static-top .navbar-inner{
+	background: #00afa9;
+}
+
+.dropdown-menu li > a:hover,
+.dropdown-menu li > a:focus,
+.dropdown-submenu:hover > a{
+	color: #00afa9;
+}
+
+.dropdown-menu .active > a,
+.dropdown-menu .active > a:hover{
+	color: #00afa9;
+}
+
+.dropdown-submenu:hover > a:after{
+	border-left-color: #00afa9;
+}
+
+.highlightBox{
+	border-left: 6px solid #00afa9;
+}
+
+.recentPostBox .medium a{
+	color: #00afa9 !important;
+}
+.blockTwitter{
+	background: #00afa9;
+}
+
+.blockTwitter:after{
+	color: #00afa9;
+}
+
+.contactBox a{
+	color: #00afa9;
+}
+
+.contactMap .gmap-marker i:before{
+	color: #00afa9;
+}
+.contactInfoBox{
+	background: #00afa9;
+}
+.btn-primary{
+	background: #00afa9;
+}
+
+.btn-primary:hover{
+	background: #00afa9;
+}
+
+.btn-link:hover{
+	color: #00afa9;
+}
+.tab-content.version2{
+	background: #00afa9;
+}
+
+.nav-tabs.version2 > li > a:hover{
+	background-color: #00afa9;
+}
+
+.nav-tabs.version2 > .active > a,
+.nav-tabs.version2 > .active > a:hover{
+	background-color: #00afa9;
+}
+
+.pretty-table table th{
+	background: #00afa9;
+}
+
+.priceBox .pricePlan{
+	color: #00afa9;
+}
+
+.priceBox .emphasis{
+	color: #00afa9;
+}
+
+.priceBox.spec .pricePlan{
+	background: #00afa9;
+}
+
+.priceBox.version2 .pricePlan{
+	background: #00afa9;
+}
+
+.priceBox.version2.spec{
+	background: #00afa9;
+}
+
+.priceBox.version2.spec .emphasis-2 btn{
+	color: #00afa9;
+}
+
+.progress .bar{
+	background: #00afa9;
+}
+
+ul.filterPortfolio li.active .btn,
+ul.filterPortfolio li .btn:hover{
+	background: #00afa9;
+}
+
+blockquote .fontello i:before{
+	color: #00afa9;
+}
+
+.sectionFaq .accordion .accordion-inner p:before{
+	color: #00afa9;
+}
+
+.faqMenu .active a{
+	border-left-color: #00afa9;
+	color: #00afa9;
+}
+
+.metaData a{
+	color: #00afa9;
+}
+
+.promoBox{
+	background: #00afa9;
+}
+
+ul.commentList .oneComment .metaIcon{
+	background: #00afa9;
+}
+
+#toTop:hover{
+	background: #00afa9;
+}
+.box-mainslider .box-click {
+	background: #00afa9;
+}
+
+/* / standard components */
+
+/* other elements */
+
+body,
+body.boxed #boxedWrapper,
+.lineBox .inner,
+.accordion-heading .accordion-toggle .entypo.metaIcon i:before,
+.sectionFaq	.accordion-heading .accordion-toggle .entypo.metaIcon i:before
+{
+	background: #f2f5f5;
+}
+
+.dropdown-menu {
+	background: #00afa9;
+}
+
+.dropdown-menu li > a {
+	color:#fff;
+}
+
+#footer {
+	background: #616264;
+}
+#footer .footNotes {
+	background: #38383b;
+}
+
+#footer .footNotes p, #footer .footNotes a  {
+	color:#818183;
+}
+
+
+.bgnavmainslider {
+background: #38383b;
+}
+
+.flexslider.navmainslider .slides > li.flex-active-slide
+{
+color: #dfdfe0;
+background:#606062;
+}
+
+.flexslider.navmainslider .slides > li {
+color: #d7d7d8;
+}
+
+.flexslider.mainslider .flex-control-paging li a {
+background: #747476;
+}

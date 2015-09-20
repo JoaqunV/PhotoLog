@@ -1,0 +1,167 @@
+/* standard components */
+
+a:hover, a:focus {
+  color:#00a5df;
+}
+
+.flickr_badge > div a:hover{ border: 1px solid #00a5df; }
+
+.navbar-static-top .navbar-inner{
+	background: #00a5df;
+}
+
+.dropdown-menu li > a:hover,
+.dropdown-menu li > a:focus,
+.dropdown-submenu:hover > a{
+	color: #00a5df;
+}
+
+.dropdown-menu .active > a,
+.dropdown-menu .active > a:hover{
+	color: #00a5df;
+}
+
+.dropdown-submenu:hover > a:after{
+	border-left-color: #00a5df;
+}
+
+.highlightBox{
+	border-left: 6px solid #00a5df;
+}
+
+.recentPostBox .medium a{
+	color: #00a5df !important;
+}
+.blockTwitter{
+	background: #00a5df;
+}
+
+.blockTwitter:after{
+	color: #00a5df;
+}
+
+.contactBox a{
+	color: #00a5df;
+}
+
+.contactMap .gmap-marker i:before{
+	color: #00a5df;
+}
+.contactInfoBox{
+	background: #00a5df;
+}
+.btn-primary{
+	background: #00a5df;
+}
+
+.btn-primary:hover{
+	background: #00a5df;
+}
+
+.btn-link:hover{
+	color: #00a5df;
+}
+.tab-content.version2{
+	background: #00a5df;
+}
+
+.nav-tabs.version2 > li > a:hover{
+	background-color: #00a5df;
+}
+
+.nav-tabs.version2 > .active > a,
+.nav-tabs.version2 > .active > a:hover{
+	background-color: #00a5df;
+}
+
+.pretty-table table th{
+	background: #00a5df;
+}
+
+.priceBox .pricePlan{
+	color: #00a5df;
+}
+
+.priceBox .emphasis{
+	color: #00a5df;
+}
+
+.priceBox.spec .pricePlan{
+	background: #00a5df;
+}
+
+.priceBox.version2 .pricePlan{
+	background: #00a5df;
+}
+
+.priceBox.version2.spec{
+	background: #00a5df;
+}
+
+.priceBox.version2.spec .emphasis-2 btn{
+	color: #00a5df;
+}
+
+.progress .bar{
+	background: #00a5df;
+}
+
+ul.filterPortfolio li.active .btn,
+ul.filterPortfolio li .btn:hover{
+	background: #00a5df;
+}
+
+blockquote .fontello i:before{
+	color: #00a5df;
+}
+
+.sectionFaq .accordion .accordion-inner p:before{
+	color: #00a5df;
+}
+
+.faqMenu .active a{
+	border-left-color: #00a5df;
+	color: #00a5df;
+}
+
+.metaData a{
+	color: #00a5df;
+}
+
+.promoBox{
+	background: #00a5df;
+}
+
+ul.commentList .oneComment .metaIcon{
+	background: #00a5df;
+}
+
+#toTop:hover{
+	background: #00a5df;
+}
+.box-mainslider .box-click {
+	background: #00a5df;
+}
+
+/* / standard components */
+
+/* other elements */
+
+body,
+body.boxed #boxedWrapper,
+.lineBox .inner,
+.accordion-heading .accordion-toggle .entypo.metaIcon i:before,
+.sectionFaq	.accordion-heading .accordion-toggle .entypo.metaIcon i:before
+{
+	background: #edeae3;
+}
+
+.dropdown-menu {
+	background: #00a5df;
+}
+
+.dropdown-menu li > a {
+	color:#fff;
+}
+
+

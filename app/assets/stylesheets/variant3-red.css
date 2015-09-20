@@ -1,0 +1,179 @@
+/* standard components */
+
+a:hover, a:focus {
+  color:#f31f0c;
+}
+
+.flickr_badge > div a:hover{ border: 1px solid #f31f0c; }
+
+.navbar-static-top .navbar-inner{
+	background: #f31f0c;
+}
+
+.dropdown-menu li > a:hover,
+.dropdown-menu li > a:focus,
+.dropdown-submenu:hover > a{
+	color: #f31f0c;
+}
+
+.dropdown-menu .active > a,
+.dropdown-menu .active > a:hover{
+	color: #f31f0c;
+}
+
+.dropdown-submenu:hover > a:after{
+	border-left-color: #f31f0c;
+}
+
+.highlightBox{
+	border-left: 6px solid #f31f0c;
+}
+
+.recentPostBox .medium a{
+	color: #f31f0c !important;
+}
+.blockTwitter{
+	background: #f31f0c;
+}
+
+.blockTwitter:after{
+	color: #f31f0c;
+}
+
+.contactBox a{
+	color: #f31f0c;
+}
+
+.contactMap .gmap-marker i:before{
+	color: #f31f0c;
+}
+.contactInfoBox{
+	background: #f31f0c;
+}
+.btn-primary{
+	background: #f31f0c;
+}
+
+.btn-primary:hover{
+	background: #f31f0c;
+}
+
+.btn-link:hover{
+	color: #f31f0c;
+}
+.tab-content.version2{
+	background: #f31f0c;
+}
+
+.nav-tabs.version2 > li > a:hover{
+	background-color: #f31f0c;
+}
+
+.nav-tabs.version2 > .active > a,
+.nav-tabs.version2 > .active > a:hover{
+	background-color: #f31f0c;
+}
+
+.pretty-table table th{
+	background: #f31f0c;
+}
+
+.priceBox .pricePlan{
+	color: #f31f0c;
+}
+
+.priceBox .emphasis{
+	color: #f31f0c;
+}
+
+.priceBox.spec .pricePlan{
+	background: #f31f0c;
+}
+
+.priceBox.version2 .pricePlan{
+	background: #f31f0c;
+}
+
+.priceBox.version2.spec{
+	background: #f31f0c;
+}
+
+.priceBox.version2.spec .emphasis-2 btn{
+	color: #f31f0c;
+}
+
+.progress .bar{
+	background: #f31f0c;
+}
+
+ul.filterPortfolio li.active .btn,
+ul.filterPortfolio li .btn:hover{
+	background: #f31f0c;
+}
+
+blockquote .fontello i:before{
+	color: #f31f0c;
+}
+
+.sectionFaq .accordion .accordion-inner p:before{
+	color: #f31f0c;
+}
+
+.faqMenu .active a{
+	border-left-color: #f31f0c;
+	color: #f31f0c;
+}
+
+.metaData a{
+	color: #f31f0c;
+}
+
+.promoBox{
+	background: #f31f0c;
+}
+
+ul.commentList .oneComment .metaIcon{
+	background: #f31f0c;
+}
+
+#toTop:hover{
+	background: #f31f0c;
+}
+.box-mainslider .box-click {
+	background: #f31f0c;
+}
+
+/* / standard components */
+
+/* other elements */
+
+body,
+body.boxed #boxedWrapper,
+.lineBox .inner,
+.accordion-heading .accordion-toggle .entypo.metaIcon i:before,
+.sectionFaq	.accordion-heading .accordion-toggle .entypo.metaIcon i:before
+{
+	background: #f4f9ff
+}
+
+.dropdown-menu {
+	background: #fff;
+	-webkit-box-shadow: 1px 0 3px rgba(0, 0, 0, 0.11), -1px 0 3px rgba(0, 0, 0, 0.11);
+	-moz-box-shadow: 1px 0 3px rgba(0, 0, 0, 0.11), -1px 0 3px rgba(0, 0, 0, 0.11);
+	box-shadow: 1px 0 3px rgba(0, 0, 0, 0.11), -1px 0 3px rgba(0, 0, 0, 0.11);
+}
+
+.dropdown-menu li > a {
+	color:#333;
+}
+
+#footer {
+	background: #000;
+}
+#footer .footNotes {
+	background: #000;
+}
+
+#footer .footNotes p, #footer .footNotes a  {
+	color:#808080;
+}

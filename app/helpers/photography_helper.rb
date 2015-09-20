@@ -1,0 +1,2 @@
+module PhotographyHelper
+end
