@@ -8,6 +8,7 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <%= stylesheet_link_tag 'variant#{session[:current_user_fondo]}' %>
 </head>
 <body>
 	<div id="boxedWrapper">
@@ -20,63 +21,65 @@
 		                <span class="icon-bar"></span>
 		                <span class="icon-bar"></span>
 		            </button>
-		            <a class="brand" href="index.html">PhotoLog</a>
-
+		            <a class="brand" href="#">PhotoLog</a>
+		            <% if session[:current_user_id] %>
 		            <div class="nav-collapse">
 		                <ul class="nav pull-left">
+	                     	<li>
+	                    		<a href="/index" >Perfil</a>
+                    		</li>
+                    		<li>
+	                    	<a href="friends">Amigos</a>
+                    		</li>
 		                    <li>
-		                        <a href="index.html">Inicio</a>
-		                    </li> 
-		                    <% if %>
-		                       
-		                    <% else %>
-		                    <li>
-		                    	<a href="invia-aboutus.html" >Perfil</a>
-	                    	 </li>
-		                    <% end %>
-		                    <% if %>
-		                       
-		                    <% else %>
-		                    <li>
-		                    	<a href="invia-site-elements.html">Amigos</a>
-	                    	</li>
-		                    <% end %>
-		             
-		                    <li>
-		                        <a href="invia-portfolio.html">Work</a>
+		                        <a href="best">Mejores Photos</a>
 		                    </li>
 		                    <li >
-		                        <a href="invia-blog.html">Blog</a>
+		                        <a href="/users">Usuarios</a>
 		                    </li>
 		                    <li>
-		                    	<% if %>
-		                        	<%= link_to "Registrarse", user_new_path %>
-		                        <% else %>
-		                        	<a href="invia-home-blue.html">Configuración</a>
-		                        <% end %>	
+		                        <a href="/config">Configuración</a>  
 	                        </li>
 	                    	<li>
-		                    	<% if %>
-		                        	<a href="invia-contact.html">Ingresar</a>
-		                        <% else %>
-		                        	<a href="invia-contact.html">Salir</a>
-		                        <% end %>	
+		                        <a href="/salir">Salir</a>
 		                    </li>
 		                </ul>
 		            </div>
-		            <!-- / nav-collapse -->
 		            <ul class="menuIcon pull-right">
-		                <li class="search"><a href="#">Buscar Usuario</a></li>
+		                <li data-filter="filter-3"><a href="/photo/new" class="btn metaIcon" data-toggle="tooltip" title="Subir Photo"><span class="entypo camera"><i></i>Subir Photo</span></a></li>
 		            </ul>
+		            <% else %>
+		            <div class="nav-collapse">
+		                <ul class="nav pull-left">
+		                    <li>
+		                        <a href="best">Mejores Photos</a>
+		                    </li>
+		                    <li >
+		                        <a href="/users">Usuarios</a>
+		                    </li>
+		                    <li>
+		                        <%= link_to "Registrarse", user_new_path %> 
+	                        </li>
+	                    	<li>
+		                       <a href="/ingresar">Ingresar</a>
+		                    </li>
+		                </ul>
+		            </div>
+		            <% end %>
+		            <!-- / nav-collapse -->
 		        </div>
 		    </div>
 		</div>
 
 		<!-- main container -->
 		<div class="container">
-
-			<%= yield %>
-
+			<% if session[:current_user_letra] %>
+				<font face="#{session[:current_user_letra]}"></font>
+					<%= yield %>
+				</font>	
+			<% else %>
+				<%= yield %>
+			<% end %>	
 		</div>
 
 		<div id="footer">
@@ -84,12 +87,16 @@
 		        <div class="row-fluid">
 		            <div class="span6">
 		                <h4 class="medium">Acerca de Photolog</h4>
-		                <p>
-		                    Aenean imperdiet fringilla ligula, ut mollis mi venenatis quis. Nunc ullamcorper cursus eros, nec sodales tellus pulvinar id. Praesent nec lectus nec felis aliquet condimentum id non velit.
+		                <p align="justify">
+		                    Photolog es un proyecto creado en función de lo solicitado por el equipo de profesores que dirigen el curso de diseño de base de datos (1S-2015), en la Universidad de Santiago de Chile. 
 		                </p>
 		            </div>
-		            <div class="span6">
-		                <h4 class="medium"> </h4>
+		            <div class="span2">
+		            </div>	
+		            <div class="span4">
+		                <h4 class="medium"> Profesores </h4>
+		                	<p>Catedra:Carolina Bonacic.
+		                	<br>Laboratorio: Fabián Arismendi.</p>
 		            </div>
 		        </div>
 		    </div>

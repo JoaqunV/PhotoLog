@@ -1,12 +1,18 @@
 Rails.application.routes.draw do
-  get 'users' => 'user#index'
+  get '/users' => 'user#index'
   get 'comentarios' => 'comment#view'
   get 'administrador' => 'administrador#index'
   get 'administrador/fotografias' => 'administrador#gestion'
   get 'administrador/bloquear'
   get 'administrador/desbloquear'
   get 'user/new'
-  get 'index' => 'photography#index'
+  get 'best' => 'photography#best'
+  post '/crear' => 'user#create'
+  get '/index' => 'photography#index'
+  get '/ingresar' => 'user#iniciarSesion'
+  get '/salir' => 'user#salir'
+  post '/login' => 'user#entrar'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
