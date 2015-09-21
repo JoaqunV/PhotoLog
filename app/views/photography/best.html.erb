@@ -22,122 +22,26 @@
 
 <div class="row-fluid">
     <div class="span12">
-    <% if session[:current_user_id]%>
-    	<div class="lineBox short">
-            <div class="inner">
-                <ul class="filterPortfolio">
-                    <li data-filter="filter-3"><a href="/photo/new" class="btn metaIcon" data-toggle="tooltip" title="Subir Photo"><span class="entypo camera"><i></i>Subir Photo</span></a></li>
-                </ul>
-            </div>
-        </div>
-    <% end %>
         <ul class="portfolioList col4" id="portfolio1">
-            <li data-id="1" data-filter="filter-1 filter-2">
+        <% @photo.each do |photo| %> 
+        <% usuario = User.find(photo.id_usuario) %>
+            <li data-id="1" >
                 <div class="easyBox">
                     <a href="#"><img src="images/content/photo7.jpg" alt=" "></a>
                     <div class="inner">
-                        <a href="#"><span class="entypo camera metaText"><i></i>photography</span></a>
-                        <h3 class="light"><a href="#">Sons of the Sun</a></h3>
-                        <p>At dawn on the 13th the Carnatic entered the port of Yokohama.  This is an important port of call in the Pacific, where
-                        </p>
+                        <a href="#"><span class="entypo camera metaText"><i><%= usuario.nombre_usuario %> <%= usuario.apellido_paterno %></i></span></a>
+                        <h3 class="light"><a href="#"><%= photo.titulo_fotografia%></a></h3>
+                        <p><%= photo.descripcion_fotografia %></p>
                     </div>
                 </div>
             </li>
-            <li data-id="2" data-filter="filter-2">
-                <div class="easyBox">
-                    <a href="#"><img src="images/content/photo1.jpg" alt=" "></a>
-                    <div class="inner">
-                        <a href="#"><span class="entypo camera metaText"><i></i>photography</span></a>
-                        <h3 class="light"><a href="#">Sons of the Sun</a></h3>
-                        <p>At dawn on the 13th the Carnatic entered the port of Yokohama.  This is an important port of call in the Pacific, where
-                        </p>
-                    </div>
-                </div>
-            </li>
-            <li data-id="3" data-filter="filter-3 filter-4">
-                <div class="easyBox">
-                    <a href="#"><img src="images/content/photo7.jpg" alt=" "></a>
-                    <div class="inner">
-                        <a href="#"><span class="entypo camera metaText"><i></i>photography</span></a>
-                        <h3 class="light"><a href="#">Sons of the Sun</a></h3>
-                        <p>At dawn on the 13th the Carnatic entered the port of Yokohama.  This is an important port of call in the Pacific, where
-                        </p>
-                    </div>
-                </div>
-            </li>
-            <li data-id="4" data-filter="filter-2">
-                <div class="easyBox">
-                    <a href="#"><img src="images/content/photo1.jpg" alt=" "></a>
-                    <div class="inner">
-                        <a href="#"><span class="entypo camera metaText"><i></i>photography</span></a>
-                        <h3 class="light"><a href="#">Sons of the Sun</a></h3>
-                        <p>At dawn on the 13th the Carnatic entered the port of Yokohama.  This is an important port of call in the Pacific, where
-                        </p>
-                    </div>
-                </div>
-            </li>
-            <li data-id="5" data-filter="filter-1">
-                <div class="easyBox">
-                    <a href="#"><img src="images/content/photo7.jpg" alt=" "></a>
-                    <div class="inner">
-                        <a href="#"><span class="entypo camera metaText"><i></i>photography</span></a>
-                        <h3 class="light"><a href="#">Sons of the Sun</a></h3>
-                        <p>At dawn on the 13th the Carnatic entered the port of Yokohama.  This is an important port of call in the Pacific, where
-                        </p>
-                    </div>
-                </div>
-            </li>
-            <li data-id="6" data-filter="filter-4">
-                <div class="easyBox">
-                    <a href="#"><img src="images/content/photo1.jpg" alt=" "></a>
-                    <div class="inner">
-                        <a href="#"><span class="entypo camera metaText"><i></i>photography</span></a>
-                        <h3 class="light"><a href="#">Sons of the Sun</a></h3>
-                        <p>At dawn on the 13th the Carnatic entered the port of Yokohama.  This is an important port of call in the Pacific, where
-                        </p>
-                    </div>
-                </div>
-            </li>
-            <li data-id="7" data-filter="filter-2 filter-4">
-                <div class="easyBox">
-                    <a href="#"><img src="images/content/photo7.jpg" alt=" "></a>
-                    <div class="inner">
-                        <a href="#"><span class="entypo camera metaText"><i></i>photography</span></a>
-                        <h3 class="light"><a href="#">Sons of the Sun</a></h3>
-                        <p>At dawn on the 13th the Carnatic entered the port of Yokohama.  This is an important port of call in the Pacific, where
-                        </p>
-                    </div>
-                </div>
-            </li>
-            <li data-id="8" data-filter="filter-3">
-                <div class="easyBox">
-                    <a href="#"><img src="images/content/photo1.jpg" alt=" "></a>
-                    <div class="inner">
-                        <a href="#"><span class="entypo camera metaText"><i></i>photography</span></a>
-                        <h3 class="light"><a href="#">Sons of the Sun</a></h3>
-                        <p>At dawn on the 13th the Carnatic entered the port of Yokohama.  This is an important port of call in the Pacific, where
-                        </p>
-                    </div>
-                </div>
-            </li>
-            <li data-id="9" data-filter="filter-2 filter-4">
-                <div class="easyBox">
-                    <a href="#"><img src="images/content/photo7.jpg" alt=" "></a>
-                    <div class="inner">
-                        <a href="#"><span class="entypo camera metaText"><i></i>photography</span></a>
-                        <h3 class="light"><a href="#">Sons of the Sun</a></h3>
-                        <p>At dawn on the 13th the Carnatic entered the port of Yokohama.  This is an important port of call in the Pacific, where
-                        </p>
-                    </div>
-                </div>
-            </li>
+        <% end %>
         </ul>
     </div>
 </div>
 <!-- /row-fluid -->
 
-<% @photo.each do |photo| %> 
+
 <div class="message"> 
-  <p><%= photo.id_fotografia %> <%= photo.titulo_fotografia%></p> 
+  <p></p> 
 </div> 
-<% end %>
