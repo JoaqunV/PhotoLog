@@ -14,22 +14,36 @@ class UserController < ApplicationController
 	def iniciarSesion
 	end	
 
+
+
 	def entrar
-	    if user = User.find_by(params[:nombre_acceso], params[:password], '1')
-	    	session[:current_user_id] = user.id_usuario
-	      	session[:current_user_fondo] = user.color_fondo
-	    	if user.estilo_letra != 'default'  	
-	      		session[:current_user_letra] = 	user.estilo_letra 
+		#if user = User.find_by(nombre_acceso: params[:nombre_acceso], password: params[:password], estado: '1');
+	    #if user = User.find_by_nombre_acceso_and_password_and_estado([:session][:nombre_acceso], [:session][:password], '1' )
+	    user = User.where("nombre_acceso='#{params[:session][:nombre_acceso]}' AND password='#{params[:session][:password]}' AND estado = 1")
+	    if user.blank? == false 
+
+	    	session[:current_user_id] = user[0].id_usuario
+	      	session[:current_user_fondo] = user[0].color_fondo
+	    	if user[0].estilo_letra != 'default'  	
+	      		session[:current_user_letra] = 	user[0].estilo_letra 
 	      	end	
 	      	redirect_to users_url
 	    else
-	      redirect_to iniciarSesion
+	      redirect_to '/ingresar'
 	    end
+	end
+	def configuracion
+		@usuario = User.find(session[:current_user_id])
+	end	
+
+	def editar
+		sql= "CALL UPD_USUARIO('"<<session[:current_user_id].to_s<<"','"<params[:usuario][:coreo].to_s<<"','"<<params[:usuario][:direccion].to_s<<"','"<<params[:usuario][:fechanacimiento].to_s<<"','"<<params[:usuario][:sexo].to_s<<"','"<<params[:usuario][:color_fondo].to_s<<"','"<<params[:usuario][:estilo_letra].to_s<<"');"
+		response = ActiveRecord::Base.connection.execute(sql)
+		redirect_to users_url
 	end
 
 	def salir
     @_current_user = session[:current_user_id] = nil
-
     redirect_to users_url
   	end
 

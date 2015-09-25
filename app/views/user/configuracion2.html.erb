@@ -1,0 +1,49 @@
+<%= form_for :usuario, url:'/editar' do |f| %>
+<div class="row-fluid">
+    <div class="span4">
+            <%= f.label :Nombre %> 
+            <%= f.text_field :nombre_usuario %>
+            <%= f.label :Nombre_Acceso %> 
+            <%= f.text_field :nombre_acceso  %>
+            <%= f.label :Direccion %> 
+            <%= f.text_field :direccion %><br>
+            <%= f.label :Colo_De_Fondo %> 
+            <%= radio_button_tag :color_fondo, '4-bw', true %> default<br>
+            <%= radio_button_tag :color_fondo, '1-blue' %> Blue<br>
+            <%= radio_button_tag :color_fondo, '2-green' %> Green<br>
+            <%= radio_button_tag :color_fondo, '3-red'  %> Red<br>
+            <%= radio_button_tag :color_fondo, '5-yellow' %> Yellow
+    </div> 
+    <div class="span4">
+            <%= f.label :Apellido_Paterno %> 
+            <%= f.text_field :apellido_paterno %>
+            <%= f.label :Contraseña %> 
+            <%= f.password_field :password %>
+            <%= f.label :Fecha_Nacimiento %> 
+            <%= f.date_field :fechanacimiento %>
+            <%= f.label :Tipo_De_Letra %> 
+            <%= f.text_field :estilo_letra, :value => @usuario.estilo_letra %><br>
+            <%= f.label :Usuario_Gold%>
+            <%= radio_button_tag :tipo_usuario,   %> <br>
+            <%= radio_button_tag :tipo_usuario,  %> Yellow
+            <%= f.text_field :estilo_letra, :value => @usuario.estilo_letra %><br>
+
+    </div> 
+    <div class="span4">
+            <%= f.label :Apellido_Materno %> 
+            <%= f.text_field :apellido_materno %>
+            <%= f.label :Correo %> 
+            <%= f.text_field :correo %>
+            <%= f.label :Sexo %> 
+            <%= radio_button_tag :sexo, 'm' %> Femenino<br>
+            <%= radio_button_tag :sexo, 'h' %> Masculino<br>
+            <%= radio_button_tag :sexo, 'o', true %> Otro<br>
+            
+    </div>
+
+</div>
+<div class="row-fluid">
+    <div class="span12">
+        <center><%= f.submit 'Guardar Cambios' %></center>
+    </div>
+</div>
