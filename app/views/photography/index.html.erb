@@ -39,6 +39,14 @@
                 <div class="easyBox">
                     <a href="#"><%= image_tag "fotos/#{photo.id_fotografia}.jpg" %></a>
                 </div>
+                <% @comentarios = Comment.all.where("id_fotografia = #{photo.id_fotografia}"); %>
+                    <% @comentarios.each do |comentario| %>
+                    <% usuariocomentario = User.find(comentario.id_usuario)%>
+                    <div class="easyBox">
+                        <a href="#"><span class="entypo camera metaText"><i><%= usuariocomentario.nombre_usuario %> <%= usuariocomentario.apellido_paterno %> </i></span></a>
+                    <h3 class="light"><a href="#"><%= comentario.texto_comentario%></a></h3>
+                    </div>
+                <% end %>
             <% end %>
         </div>
         <div class="span3">
