@@ -3,7 +3,7 @@
     <div class="row-fluid">
         <div class="span12">
             <div class="titleBox">
-                <h1 class="huge"><%= user.nombre_usuario %> <%= user.apellido_paterno %></h1>
+                <h1 class="huge"><%=user.nombre_usuario %> <%= user.apellido_paterno %></h1>
             </div>
         </div>
     </div>
@@ -23,28 +23,40 @@
 
     <div class="row-fluid">
         <div class="span3">
-            <h3>Aquí iran las fotos</h3>
-            <ul class="portfolioList col4" id="portfolio1">
+            <h3>Fotografias </h3>
+            <ul class="portfolioList col1" id="portfolio1">
             <% @photo.each do |photo| %> 
-            <% usuario = User.find_by_id_usuario(photo.id_usuario) %>
                 <li data-id="1" >
                     <div class="easyBox">
-                        <a href="#"><img src="fotos/<%= photo.id %>.jpg" alt=" "></a>
-                        <div class="inner">
-                            <a href="#"><span class="entypo camera metaText"><i><%= usuario.nombre_usuario %> <%= usuario.apellido_paterno %></i></span></a>
-                            <h3 class="light"><a href="#"><%= photo.titulo_fotografia%></a></h3>
-                            <p><%= photo.descripcion_fotografia %></p>
-                        </div>
+                        <a href="#"><%= image_tag "fotos/#{photo.id_fotografia}.jpg" %></a>
                     </div>
                 </li>
             <% end %>
             </ul>
         </div>
         <div class="span6">
-            <h3>Aquí ira la ultima foto</h3>
+            <% @phot.each do |photo| %> 
+                <div class="easyBox">
+                    <a href="#"><%= image_tag "fotos/#{photo.id_fotografia}.jpg" %></a>
+                </div>
+            <% end %>
         </div>
         <div class="span3">
-            <h3>Aquí iran las fotos de amigos</h3>
+            <h3>Amigos</h3>
+            <ul class="portfolioList col1" id="portfolio1">
+            <% @amigos.each do |amigo| %>
+            <% usuario = User.find(amigo.id_usuario_amigo)%> 
+            <li data-id="1" >
+                <div class="easyBox">
+                    <a href="#"><%= image_tag "usuarios/#{amigo.id_usuario_amigo}.png" %></a>
+                    <div class="inner">
+                        <a href="#"><span class="entypo camera metaText"><i><%= usuario.nombre_usuario %> <%= usuario.apellido_paterno %> <%= usuario.apellido_materno %></i></span></a>
+                        <h3 class="light"><a href="#"><%= usuario.nombre_acceso%></a></h3>
+                    </div>
+                </div>
+            </li>
+            <% end %>
+            </ul>
         </div>
     </div>
     <!-- /row-fluid -->

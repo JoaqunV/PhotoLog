@@ -27,7 +27,7 @@
         <% usuario = User.find_by(photo.id_usuario) %>
             <li data-id="1" >
                 <div class="easyBox">
-                    <a href="#"><img src="fotos/<%=  =>.jpg" alt=" "></a>
+                    <a href="#"><%= image_tag "fotos/#{photo.id_fotografia}.jpg" %></a>
                     <div class="inner">
                         <a href="#"><span class="entypo camera metaText"><i><%= usuario.nombre_usuario %> <%= usuario.apellido_paterno %></i></span></a>
                         <h3 class="light"><a href="#"><%= photo.titulo_fotografia%></a></h3>

@@ -8,7 +8,7 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
-  <%= stylesheet_link_tag 'variant#{session[:current_user_fondo]}' %>
+   <%= stylesheet_link_tag 'variant#{session[:current_user_fondo]}' %>
 </head>
 <body>
 	<div id="boxedWrapper">
@@ -29,10 +29,10 @@
 	                    		<a href="/index" >Perfil</a>
                     		</li>
                     		<li>
-	                    	<a href="friends">Amigos</a>
+	                    	<a href="/friends">Amigos</a>
                     		</li>
 		                    <li>
-		                        <a href="best">Mejores Photos</a>
+		                        <a href="/best">Mejores Photos</a>
 		                    </li>
 		                    <li >
 		                        <a href="/users">Usuarios</a>

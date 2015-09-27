@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150917043939) do
+ActiveRecord::Schema.define(version: 0) do
 
   create_table "amistad", primary_key: "id_amistad", force: :cascade do |t|
     t.integer  "id_usuario",        limit: 4, null: false
@@ -89,17 +89,6 @@ ActiveRecord::Schema.define(version: 20150917043939) do
     t.integer  "estado",               limit: 4
     t.string   "color_fondo",          limit: 6
     t.string   "estilo_letra",         limit: 20
-  end
-
-  create_table "usuarios", force: :cascade do |t|
-    t.string   "NOMBRE_USUARIO",  limit: 255
-    t.string   "NOMBRE_ACCESO",   limit: 255
-    t.string   "PASSWORD",        limit: 255
-    t.string   "CORREO",          limit: 255
-    t.integer  "CANTIDAD_AMIGOS", limit: 4
-    t.integer  "CANTIDAD_FOTOS",  limit: 4
-    t.datetime "created_at"
-    t.datetime "updated_at"
   end
 
   create_table "valoracion", primary_key: "id_valoracion", force: :cascade do |t|
