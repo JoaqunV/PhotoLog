@@ -1,5 +1,7 @@
 <% if session[:current_user_id]
      user = User.find(session[:current_user_id]) %>
+     <% fondo = session[:current_user_fondo];%>
+   <%= stylesheet_link_tag 'variant#{fondo}' %>
     <div class="row-fluid">
         <div class="span12">
             <div class="titleBox">
@@ -38,6 +40,8 @@
             <% @phot.each do |photo| %> 
                 <div class="easyBox">
                     <a href="#"><%= image_tag "fotos/#{photo.id_fotografia}.jpg" %></a>
+                    <h3><%= photo.titulo_fotografia%></h3>
+                    <p><%= photo.descripcion_fotografia%></p>
                 </div>
                 <% @comentarios = Comment.all.where("id_fotografia = #{photo.id_fotografia}"); %>
                     <% @comentarios.each do |comentario| %>

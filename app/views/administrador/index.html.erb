@@ -1,3 +1,4 @@
+<% if session[:current_user_id] == 3 %>
 <div class="row-fluid">
     <div class="span12">
         <div class="titleBox">
@@ -41,7 +42,7 @@
 				<% usuario = User.find(auditoria.id_usuario) %>
 				<td colspan="3"> <center><%= auditoria.accion%></center> </td>
 				<td colspan="4"> <center><%= auditoria.tabla%></center> </td>
-				<td colspan="3"> <center><%= auditoria.campo%></center> </td>
+				<td colspan="3"> <center><%= auditoria.campos%></center> </td>
 				<td colspan="3"> <center><%= auditoria.valor_old%></center> </td>
 				<td colspan="3"> <center><%= auditoria.valor_new%></center> </td>
 				<td colspan="3"> <center><%= usuario.nombre_usuario %></center></td>
@@ -58,6 +59,9 @@
     </div>
 </div>
 <!-- / row-fluid -->
+<% else %>
+<h1>Usted no se ha identificado como administrador</h1>
+<% end %>
 
 
 

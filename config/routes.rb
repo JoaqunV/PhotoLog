@@ -15,6 +15,8 @@ Rails.application.routes.draw do
   get '/config' => 'user#configuracion'
   post '/login' => 'user#entrar'
   post '/editar' => 'user#editar'
+  get  'photo/new' => 'photography#new'
+  post 'photo/new' =>'photography#new'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -25,22 +25,27 @@ class UserController < ApplicationController
 	    	if user[0].estilo_letra != 'default'  	
 	      		session[:current_user_letra] = 	user[0].estilo_letra 
 	      	end	
-	      	redirect_to users_url
+	      	redirect_to '/index'
 	    else
-	      redirect_to '/index'
+	      redirect_to '/ingresar'
 	    end
 	end
 	def configuracion
 		@usuario = User.find(session[:current_user_id])
 	end	
 	def editar
-
-		@sql2= "CALL UPD_USUARIO("<<session[:current_user_id].to_s<<",'"<params[:usuario][:correo].to_s<<"','"<<params[:usuario][:direccion].to_s<<"','"<<params[:usuario][:fechanacimiento].to_s<<"','"<<params[:sexo].to_s<<"');"
+		id_usuario = session[:current_user_id];
+		correo = params[:usuario][:correo];
+		direccion = params[:usuario][:direccion];
+		fechanacimiento = params[:usuario][:fechanacimiento];
+		sexo = params[:sexo];
+		estilo_letra = params[:usuario][:estilo_letra];
+		color_fondo = params[:color_fondo];
+		@sql2= "CALL UPD_USUARIO(#{id_usuario}, '#{correo}', '#{direccion}', '#{fechanacimiento}', '#{sexo}', '#{estilo_letra}', '#{color_fondo}');";
 		logger.debug "query: "<<@sql2.to_s
+		sesion[:current_user_fondo] = color_fondo;
 		response = ActiveRecord::Base.connection.execute(@sql2)
-
-		redirect_to users_url
-
+		redirect_to '/index'
 		#@usuario = User.new(usuarios_params2)
 		#id_usuario = session[:current_user_id].to_s
 		#sql= "CALL UPD_USUARIO("<<id_usuario<<",'"<@usuario.correo.to_s<<"','"<<@usuario.direccion.to_s<<"','"<<@usuario.fechanacimiento.to_s<<"','"<<params[:sexo].to_s<<"');"
@@ -55,6 +60,7 @@ class UserController < ApplicationController
 
   	def friends
   		@amistades = Amistad.all.where("id_usuario = #{session[:current_user_id]}");
+
   	end
   		
 	private

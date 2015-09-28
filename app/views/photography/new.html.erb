@@ -1,0 +1,42 @@
+<div class="row-fluid">
+    <div class="span12">
+        <div class="titleBox">
+            <h1 class="huge">Nueva Photo</h1>
+        </div>
+    </div>
+</div>
+<!-- / row-fluid -->
+
+
+<div class="row-fluid">
+    <div class="span12">
+        <div class="lineBox right">
+            <div class="inner">
+                <a href="/index" class="btn metaIcon" data-toggle="tooltip" title="Home"><span class="entypo home"><i></i>Home</span></a>
+                <a href="#" class="btn btn-icon left btn-primary"><span class="entypo vcard"><i></i></span> Subir Photo</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- / row-fluid -->
+
+<div class="row-fluid">
+    <div class="span12">
+        <ul class="portfolioList col4" id="portfolio1">
+        <%= form_tag({:controller => "photography", :action => "new"}, :method => "post", :multipart => true) do |f|%>
+		   <%= file_field_tag "archivo", :required => "required" %><br>
+		   <%= label_tag :Titulo %> 
+           <%= text_field_tag :titulo %><br>
+           <%= label_tag :Descripción %> 
+           <%= text_field_tag :descripcion %><br>
+		   <%= submit_tag "Subir Fotografia" %>
+		<% end %>
+		<% if @formato_erroneo %>
+		  <div>
+		     <p> El formato ingresado es incorrecto. Usted sólo puede subir archivos .jpg </p>
+		  </div>
+		<% end %>
+        </ul>
+    </div>
+</div>
+
